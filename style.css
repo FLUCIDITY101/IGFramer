@@ -1,0 +1,130 @@
+body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f1e6;
+    flex-direction: column;
+    font-family: "Crete Round", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+}
+
+#imageUpload {
+    display: none;
+}
+
+#aspectRatio, #imageQuality, #downloadBtn, #uploadBtn, #marginOption, #backgroundColorSelect, #clearBtn {
+    padding: 8px 12px;
+    font-size: 16px;
+    color: black;
+    border: 3px solid orange;
+    background-color: transparent;
+    font-family: "Crete Round", serif;
+    grid-row-start: 2;
+    cursor: pointer;
+}
+
+#downloadBtn, #uploadBtn, #clearBtn{
+    border: 4px solid black;
+}
+
+#backgroundColorCustom{
+    justify-self: center;
+    align-content: center;
+}
+
+#imagePreviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 40px;
+    border: 2px dashed #ccc;
+    padding: 20px;
+    align-items: center;
+    width: 80%;
+    height: 50vh;
+    overflow-y: scroll;
+}
+
+.imagePreview {
+    width: 200px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+
+.imagePreview:hover {
+    transform: scale(1.3);
+    transition: ease-in-out 0.3s;
+}
+
+.imagePreview canvas {
+    width: 100%;
+    height: auto;
+}
+
+.logo {
+    height: 100px;
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+}
+
+.info {
+    height: 20vh;
+}
+
+.portion1 {
+    margin: 30px 30px 0px 30px;
+}
+
+.portion2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.options {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 4 columns */
+    grid-template-rows: repeat(2, auto); /* 2 rows */
+    gap: 10px;
+    align-items: center; /* Center vertically */
+    text-align: center; /* Center text within each grid item */
+    margin: 20px;
+}
+
+
+.colour-picker{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+}
+
+#imagePreviews.highlight {
+    border-color: purple;
+}
+
+#imagePreviews .drop-area { /* Styles for the drop area */
+    text-align: center;
+    font-size: 18px;
+    color: #999;
+}
+
+#previewContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+label {
+    font-size: 0.85rem;
+}
